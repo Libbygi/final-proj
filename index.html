@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Stay Fresh</title>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+	<!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <!--autocomplete-->
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<!-- handlebars -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <!-- Parse CDN -->
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+	<script src="client.js"></script>
+  <!-- js -->
+  <script src="app.js"></script>
+
+	<script id="item-template" type="text/x-handlebars-template">
+		<li class="item" data-id="{{ objectId }}">
+			<span class="item_text" id= "{{ value }}">{{ text }}</span>
+      <i class="fa fa-times pull-right delete"></i>
+		</li>
+	</script>
+</head>
+
+<body>
+  <nav>
+    <div class="container-fluid">
+      <div>
+        <h1 class="nav_title">Stay Fresh</h1>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div>What groceries do you need to buy?</div>
+
+    <div>
+      Begin typing to search
+      <input id="foodItems">
+    </div>
+
+    <div>
+      <form id="customForm">
+        <div>
+          Don't see what you're looking for? Add custom items here:
+          <input id="customItem" type="text">
+        </div>
+        <button>Add to list</button>
+      </form>
+    </div>
+
+    <div>
+        <div>Shopping List</div>
+        <div>
+          <ul class="shopping-list"></ul>
+        </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
