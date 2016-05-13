@@ -1,5 +1,7 @@
 # final-proj
 
+I was not able to devote as much time to this as I would have liked, this is still in pretty rough shape. I hope to keep working out the kinds and polishing things off down the road, but submitting for now.
+
 In its ideal/finished form, this app would:
 
 Part 1:
@@ -20,6 +22,4 @@ I tested out an example with calcium -- the addNutrients function iterates throu
 just fetches the list of items, the second fetches a detailed list of nutrition information for a single food item, by ID) -- finds the mg of Calcium per serving and stores that in a variable
 
 I wanted to have that information display in a tooltip or something on hover of each item, but was not able to get there. 
-
-I'll keep playing with this in the future.
 
